@@ -1,0 +1,31 @@
+.form-container {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto auto 1fr;
+  row-gap: 0px; 
+  column-gap: 0px;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.form-container h1 {
+  grid-column: 1 / -1;
+  color: black;
+}
+
+.form-container .text-field {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* .form-container .submit-button {
+  grid-column: 1 / -1;
+} */
+
+  

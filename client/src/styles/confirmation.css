@@ -1,0 +1,114 @@
+:root {
+    --head-font: 'Montserrat', sans-serif;
+    --main-font: 'Open Sans', sans-serif;
+    --main-color: rgba(76, 175, 80, 1);
+    --error-color: rgba(244, 67, 54, 1);
+  } 
+  .modalbox.success,
+  .modalbox.error {
+    box-shadow: 0 1px 3px rgba(212, 180, 180, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 30px;
+    padding: 25px 25px 15px;
+  }
+  .modalbox.success{
+    background: rgb(121, 234, 129);
+  }
+
+  .modalbox.error{
+    background: rgb(17, 18, 17);
+  }
+  
+  
+ 
+  .modalbox.success h1,
+  .modalbox.error h1 {
+    font-family: var(--head-font);
+    font-size: 22px;
+  }
+  
+  .modalbox.success p,
+  .modalbox.error p {
+    font-family: var(--main-font);
+    font-size: 16px;
+  }
+  
+  .modalbox.success button,
+  .modalbox.error button,
+  .modalbox.success button:active,
+  .modalbox.error button:active,
+  .modalbox.success button:focus,
+  .modalbox.error button:focus {
+    transition: 0.1s;
+    border-radius: 30px;
+    margin-top: 15px;
+    width: 80%;
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+    outline: none;
+  }
+  
+  .modalbox.success button:hover,
+  .modalbox.error button:hover {
+    color: white;
+    background: var(--main-color);
+    border-color: transparent;
+  }
+  
+  .modalbox.error button,
+  .modalbox.error button:active,
+  .modalbox.error button:focus {
+    color: var(--error-color);
+    border-color: var(--error-color);
+  }
+  
+  .modalbox.error button:hover {
+    color: white;
+    background: var(--error-color);
+  }
+  
+  .modalbox.success .icon,
+  .modalbox.error .icon {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -70px;   
+    height: 90px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .modalbox.success .icon{
+    background: var(--main-color);
+  }
+
+  .modalbox.error .icon {
+    background: var(--error-color);
+  }
+  
+  .modalbox.success .icon span,
+  .modalbox.error .icon span {
+    position: absolute;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .change {
+    clear: both;
+    display: block;
+    font-size: 10px;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+ 

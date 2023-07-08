@@ -1,0 +1,21 @@
+/* home.css */
+.home-container {
+  display: flex;
+}
+
+.welcomecard {
+  background-color: #f0f0f0;
+  padding: 20px; 
+  flex: 1;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+}
+
+.welcomecard h2,
+.welcomecard h6 {
+  color: black;
+  text-align: left;
+}

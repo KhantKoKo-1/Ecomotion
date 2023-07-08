@@ -1,0 +1,239 @@
+:root {
+  --gray: #0f2027;
+  --dark-blue: #203a43;
+  --blue: #2c5364;
+
+  --fs1: 1.266rem;
+  --fs2: 1.125rem;
+  --fs3: 1.3rem;
+  --fs4: 0.889rem;
+
+  --sp1: 1.5rem;
+  --sp2: 1rem;
+  --sp3: 0.4rem;
+  --sp4: 0.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3f4245;
+  font-family: "Helvetica", sans-serif;
+  font-size: var(--fs3);
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-screen {
+  width: 100%;
+  height: 100%;
+  max-width: calc(411px / 1.1);
+  max-height: calc(731px / 1.4);
+  background: radial-gradient(circle at 0 0, var(--blue), var(--gray) 50%);
+  border-radius: 20px;
+  position: center;
+  padding: 10px;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp1) var(--sp2);
+}
+
+.app-header > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header > div > h2,
+.app-header > i {
+  font-size: var(--fs1);
+}
+
+.app-header > div > p {
+  font-size: var(--fs4);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.app-card-wrapper {
+  padding: var(--sp4) var(--sp2) var(--sp2) var(--sp2);
+}
+
+.app-card-wrapper > p {
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 100%;
+  padding: var(--sp3);
+  border-radius: 5px;
+  background: linear-gradient(to right bottom, var(--blue), var(--dark-blue));
+  box-shadow: rgba(0, 0, 0, 0.18) 0 var(--sp3) var(--sp3);
+}
+
+.card > h3 {
+  font-size: var(--fs3);
+}
+
+.card > .card-date {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card > .card-date > p {
+  font-size: 0.6rem;
+}
+
+.card > .card-details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card > .card-details > p {
+  font-size: var(--fs4);
+  align-self: flex-end;
+}
+
+.card > .card-details > .card-logo {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(255, 190, 0, 0.9);
+}
+
+.card > .card-details > .card-logo:after {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.9);
+  transform: translateX(-50%);
+}
+
+.app-card-balance {
+  padding: 0 var(--sp2);
+}
+
+.app-card-balance > span {
+  font-size: var(--fs3);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.app-card-balance > h3 {
+  font-size: var(--fs1);
+}
+
+.app-upcoming-payments-wrapper {
+  padding: 0 var(--sp2);
+}
+
+.app-upcoming-payments-wrapper > span {
+  font-size: var(--fs3);
+}
+
+.upcoming-payments > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0;
+  background-color: var(--gray);
+  border-radius: 10px;
+  background: linear-gradient(to right bottom, var(--blue), var(--dark-blue));
+}
+
+
+.upcoming-payments > div > h4 {
+  margin-top: var(--sp4);
+  font-size: var(--fs4);
+}
+
+.button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 6px 2px;
+  cursor: pointer;
+  padding: 10px 24px;
+}
+
+.button1 {
+  background-color: #4caf50;
+}
+.button2 {
+  background-color: #ca192e;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 30%;
+  left: 42%;
+  background-color: rgba(78, 76, 76, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-box {
+  background-color: rgba(49, 50, 53, 0.53);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.dialog-box h3 {
+  margin-top: 0;
+  color: #faf7f7;
+}
+
+.dialog-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-box label {
+  margin-bottom: 10px;
+  color: rgb(239, 234, 234);
+}
+
+.dialog-box input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #0c0101;
+  margin-bottom: 10px;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dialog-buttons button {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
